@@ -7,7 +7,11 @@ function Todo(props){
 
     function deleteHandel(){
         setModelIsOpen(true)
-    } 
+    }
+
+    function closeHandel(){
+        setModelIsOpen(false);
+    }
 
     return(
         <div className="card"> 
@@ -16,7 +20,7 @@ function Todo(props){
                  <button className="btn btn-danger float-end" onClick={deleteHandel}>Delete</button>
             </div>
 
-            {modelIsOpen ? <><Model /> <Backdrop /></>: null}
+            {modelIsOpen ? <><Model onCancel={closeHandel} onConfirm={closeHandel}/> <Backdrop onCancel={closeHandel} /></>: null}
           </div> 
     )
 }
