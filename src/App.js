@@ -1,7 +1,4 @@
 import Todo from'./components/Todo';
-import Model from'./components/Model';
-import Backdrop from'./components/Backdrop';
-
 
 function App() {
   return (
@@ -10,11 +7,6 @@ function App() {
       <Todo title='Learn React'/> 
       <Todo title='Learn Angular'/> 
       <Todo title='Learn Vue.js'/> 
-
-
-      <Model />
-      <Backdrop />
-     
      
     </div>
   );
