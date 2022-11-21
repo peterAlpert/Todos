@@ -4,7 +4,7 @@ function App() {
   return (
     <div className='container'>
       <h1>My Todos </h1>
-      <Todo /> 
+      <Todo title='learn react'/> 
      
      
     </div>

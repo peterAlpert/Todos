@@ -1,10 +1,10 @@
-function Todo(){
+function Todo(props){
 
     return(
-        <div className="row card"> 
-            <h2>TITLE</h2>
-            <div className="col-3" >
-            <button className="btn btn-danger float-right">Delete</button>
+        <div className="card"> 
+            <h2>{props.title}</h2><br/>
+            <div  >
+            <button className="btn btn-danger float-end">Delete</button>
             </div>
       </div> 
     )
